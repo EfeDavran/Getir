@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anasayfa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Anasayfa" customModule="Getir" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getir-banner" translatesAutoresizingMaskIntoConstraints="NO" id="LGf-GB-1x5">
+                                <rect key="frame" x="0.0" y="141" width="393" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="scv-sW-m1V"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getirlogo" translatesAutoresizingMaskIntoConstraints="NO" id="h6Q-dJ-XS3">
+                                <rect key="frame" x="0.0" y="-102" width="393" height="260"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="4bb-X0-oOb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adres" translatesAutoresizingMaskIntoConstraints="NO" id="hw1-gZ-pXi">
+                                <rect key="frame" x="0.0" y="104" width="424" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="AfV-dN-tGJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar" translatesAutoresizingMaskIntoConstraints="NO" id="cd7-1Y-AgE">
+                                <rect key="frame" x="0.0" y="766" width="393" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="jEw-d3-xjJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabicon" translatesAutoresizingMaskIntoConstraints="NO" id="B2H-cK-JYw">
+                                <rect key="frame" x="156" y="740" width="81" height="104"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8oZ-CB-yJo">
+                                <rect key="frame" x="0.0" y="354" width="393" height="386"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5Cd-Tw-E51">
+                                    <size key="itemSize" width="180" height="350"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kategoriHucre" id="ohK-YJ-j1I" customClass="KategorilerHucre" customModule="Getir" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="350"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Smq-YC-gkN">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="350"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="superikili" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-ZN-BNJ">
+                                                    <rect key="frame" x="-7" y="8" width="112" height="92"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Süper İkili" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnf-Qs-sIX">
+                                                    <rect key="frame" x="17" y="99" width="64" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="kategoriImageView" destination="j3K-ZN-BNJ" id="LxK-uZ-opf"/>
+                                            <outlet property="kategoriIsmiLabel" destination="tnf-Qs-sIX" id="nqp-0i-G50"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h6Q-dJ-XS3" firstAttribute="leading" secondItem="hw1-gZ-pXi" secondAttribute="leading" id="0D8-NV-i8x"/>
+                            <constraint firstItem="B2H-cK-JYw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="0LY-WT-pkP"/>
+                            <constraint firstItem="B2H-cK-JYw" firstAttribute="top" secondItem="8oZ-CB-yJo" secondAttribute="bottom" id="11m-7y-1js"/>
+                            <constraint firstItem="h6Q-dJ-XS3" firstAttribute="trailing" secondItem="LGf-GB-1x5" secondAttribute="trailing" id="1cs-wB-Sbp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8oZ-CB-yJo" secondAttribute="trailing" id="8eQ-Nb-Jf8"/>
+                            <constraint firstItem="LGf-GB-1x5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="9XR-0F-Rwd"/>
+                            <constraint firstItem="8oZ-CB-yJo" firstAttribute="top" secondItem="LGf-GB-1x5" secondAttribute="bottom" id="BIH-B4-beY"/>
+                            <constraint firstItem="cd7-1Y-AgE" firstAttribute="leading" secondItem="LGf-GB-1x5" secondAttribute="leading" id="Cat-V8-MB3"/>
+                            <constraint firstAttribute="trailing" secondItem="h6Q-dJ-XS3" secondAttribute="trailing" id="CeK-ND-hJ1"/>
+                            <constraint firstItem="h6Q-dJ-XS3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cqp-eQ-Wrb"/>
+                            <constraint firstItem="cd7-1Y-AgE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="H3L-hs-3cC"/>
+                            <constraint firstItem="h6Q-dJ-XS3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-102" id="Lw4-CK-bTv"/>
+                            <constraint firstItem="B2H-cK-JYw" firstAttribute="centerY" secondItem="cd7-1Y-AgE" secondAttribute="centerY" id="MuB-P7-BKX"/>
+                            <constraint firstItem="8oZ-CB-yJo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OvN-Ih-mCd"/>
+                            <constraint firstItem="hw1-gZ-pXi" firstAttribute="leading" secondItem="LGf-GB-1x5" secondAttribute="leading" id="az1-uz-797"/>
+                            <constraint firstItem="B2H-cK-JYw" firstAttribute="centerX" secondItem="cd7-1Y-AgE" secondAttribute="centerX" id="kah-sJ-AIY"/>
+                            <constraint firstItem="cd7-1Y-AgE" firstAttribute="trailing" secondItem="LGf-GB-1x5" secondAttribute="trailing" id="oI1-Sr-EOm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hw1-gZ-pXi" secondAttribute="trailing" constant="-47" id="vEW-VW-GpV"/>
+                            <constraint firstItem="hw1-gZ-pXi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="wGT-8X-qTo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adressView" destination="hw1-gZ-pXi" id="tAY-Xt-XCj"/>
+                        <outlet property="kategoriCollectionView" destination="8oZ-CB-yJo" id="nxr-nw-YRd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3.8167938931297707" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="adres" width="386" height="48"/>
+        <image name="getir-banner" width="1124" height="562"/>
+        <image name="getirlogo" width="2880" height="1122"/>
+        <image name="superikili" width="194" height="202"/>
+        <image name="tabbar" width="392" height="52"/>
+        <image name="tabicon" width="104" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
